@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <style>
+            h1, 
+            form{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="" style="text-align: center">
+            <input type="text" placeholder="Username" id="username" />
+            <input type="password" placeholder="Password" id="password"/>
+            <input type="button" value="Login" id="tombol"/>
+        </form>
+
+        <script>
+            const bntombol = document.querySelector("#tombol");
+            const txtUsername = document.querySelector("#username");
+            const txtPassword = document.querySelector("#password");
+
+            bntombol.addEventListener("click", function(){
+               // console.log(txtUsername.value);
+               // if (txtUsername.value == "mita"){
+                 //   console.log ("Username anda benar");
+                // }
+                // if (txtPassword.value == "pusingcoding"){
+                //    console.log ("Password anda benar");
+                // }
+                if (txtUsername.value == "mita" && txtPassword.value == "pusingcoding"){
+                window.location = "page_1.html";
+            }
+            });
+        </script>
+    </body>
+</html>
